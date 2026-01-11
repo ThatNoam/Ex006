@@ -29,8 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void clicked(View view) {
         counter += 1;
+        if ((counter % 6) == 0) {
+            counter = 0;
+            txt.setText("Enough to click. Go to new start!");
+        }
 
-        txt.setText("This is a click number: " + counter);
+        else {
+            txt.setText("This is a click number: " + counter);
+        }
         }
 
 }

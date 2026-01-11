@@ -11,6 +11,7 @@
         android:id="@+id/txt"
         android:layout_width="205dp"
         android:layout_height="91dp"
+        android:fontFamily="cursive"
         android:text="Click Me"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
