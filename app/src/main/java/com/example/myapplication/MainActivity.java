@@ -28,15 +28,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clicked(View view) {
+        btn.setText("Click me");
         counter += 1;
-        if ((counter % 6) == 0) {
-            counter = 0;
-            txt.setText("Enough to click. Go to new start!");
+
+        if ((counter % 7) == 0) {
+            btn.setText("BOOM");
         }
 
-        else {
-            txt.setText("This is a click number: " + counter);
-        }
+        txt.setText("This is a click number: " + counter);
         }
 
 }
